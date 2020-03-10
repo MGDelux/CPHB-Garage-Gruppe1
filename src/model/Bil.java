@@ -1,6 +1,6 @@
 package model;
 
-public class Bil { // har ikke gjort den abstract inu!
+public abstract class Bil { // har ikke gjort den abstract inu!
     int regNR;
     String maerke;
     String model;
