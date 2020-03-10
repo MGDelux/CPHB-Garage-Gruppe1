@@ -3,7 +3,7 @@ package model;
 public class ElBil extends Bil {
     int batteriKapacitet;
     int maksKm;
-    int whPrKm;
+    double whPrKm;
 
     @Override
     public String toString() {

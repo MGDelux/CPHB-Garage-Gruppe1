@@ -1,8 +1,8 @@
 package model;
 
 public class DieselBil extends Bil {
-    int kmPrL;
-    int partikelFilter;
+    protected double kmPrL;
+    protected int partikelFilter;
 
     @Override
     public String toString() {

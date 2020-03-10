@@ -2,7 +2,7 @@ package model;
 
 public class BenzinBil extends Bil {
     int oktanTal;
-    int kmPrL;
+    double kmPrL;
 
     @Override
     public String toString() {
