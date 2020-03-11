@@ -4,10 +4,9 @@ public class BenzinBil extends Bil {
    private int oktanTal;
    private int kmPrL;
 
-    public void setoktanTal() {
-        this.oktanTal = oktanTal;
-    }
-    public void setKmPrL() {this.kmPrL = kmPrL; }
+   public BenzinBil(int oktanTal, int kmPrL){
+       this.oktanTal = oktanTal;
+        this.kmPrL = kmPrL;}
 
 
     public int getoktanTal() { return oktanTal; }
