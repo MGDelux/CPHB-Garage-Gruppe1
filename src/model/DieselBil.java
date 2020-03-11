@@ -16,4 +16,20 @@ public class DieselBil extends Bil {
                 ", antalDoore=" + antalDoore +
                 '}';
     }
+
+    public double getKmPrL() {
+        return kmPrL;
+    }
+
+    public int getPartikelFilter() {
+        return partikelFilter;
+    }
+
+    public void setKmPrL(double kmPrL) {
+        this.kmPrL = kmPrL;
+    }
+
+    public void setPartikelFilter(int partikelFilter) {
+        this.partikelFilter = partikelFilter;
+    }
 }
