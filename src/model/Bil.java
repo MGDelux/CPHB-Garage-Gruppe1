@@ -16,9 +16,9 @@ public abstract class Bil {
         this.model = model;
         this.aargang = arrgang;
         this.antalDoore = antaldoore;
-        if (model.toLowerCase().equals("elbil"){
+      //  if (model.toLowerCase().equals("elbil"){
 
-        }
+      //  }
     }
 
     public double beregnGrønEjerAfgift(int kmPrL) {
