@@ -2,10 +2,12 @@ package model;
 
 public class DieselBil extends Bil {
     protected double kmPrL;
-    protected int partikelFilter;
+    protected boolean partikelFilter;
 
-    public DieselBil(int regNR, String maerke, String model, int aarGgang, int antalDoore) {
+    public DieselBil(int regNR, String maerke, String model, int aarGgang, int antalDoore,boolean partikelFilter,int kmPrL) {
         super(regNR, maerke, model, aarGgang, antalDoore);
+        this.partikelFilter = partikelFilter;
+        this.kmPrL = kmPrL;
     }
 
     @Override
@@ -14,7 +16,7 @@ public class DieselBil extends Bil {
     }
 
 
-    public DieselBil(int regNR, String maerke, String model, int aarGgang, int antalDoore, double kmPrL, int partikelFilter) {
+    public DieselBil(int regNR, String maerke, String model, int aarGgang, int antalDoore, double kmPrL, boolean partikelFilter) {
         super(regNR, maerke, model, aarGgang, antalDoore);
         this.kmPrL = kmPrL;
         this.partikelFilter = partikelFilter;
