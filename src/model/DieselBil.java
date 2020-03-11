@@ -4,6 +4,16 @@ public class DieselBil extends Bil {
     protected double kmPrL;
     protected int partikelFilter;
 
+    public DieselBil(int regNR, String maerke, String model, int aarGgang, int antalDoore) {
+        super(regNR, maerke, model, aarGgang, antalDoore);
+    }
+
+    public DieselBil(int regNR, String maerke, String model, int aarGgang, int antalDoore, double kmPrL, int partikelFilter) {
+        super(regNR, maerke, model, aarGgang, antalDoore);
+        this.kmPrL = kmPrL;
+        this.partikelFilter = partikelFilter;
+    }
+
     @Override
     public String toString() {
         return "DieselBil{" +
@@ -17,19 +27,4 @@ public class DieselBil extends Bil {
                 '}';
     }
 
-    public double getKmPrL() {
-        return kmPrL;
-    }
-
-    public int getPartikelFilter() {
-        return partikelFilter;
-    }
-
-    public void setKmPrL(double kmPrL) {
-        this.kmPrL = kmPrL;
-    }
-
-    public void setPartikelFilter(int partikelFilter) {
-        this.partikelFilter = partikelFilter;
-    }
 }
