@@ -16,4 +16,9 @@ public class Garage {
                 ", garageNavn='" + garageNavn + '\'' +
                 '}';
     }
-}
+    //Bil registerBil(int regNR,String maerke, String model, int aarGang, int antalDoore ){
+       // Bil(regNR,maerke,model,aarGang,antalDoore)
+
+    }
+
+
