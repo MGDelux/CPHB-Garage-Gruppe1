@@ -5,31 +5,14 @@ import java.util.ArrayList;
 public class Garage {
     public static ArrayList<Bil> biler = new ArrayList<Bil>();
     protected String garageNavn;
-    protected  static void tilFoejNyBil(int regNr, String maerKe, String model, int arrgang, int antaldoore){
-        Bil bileR;
-
-        bileR = new Bil(regNr,maerKe,model,arrgang,antaldoore) {
-        };
-        biler.add(bileR);
-    }
     public
      static void main(String[] args) {
 
-        tilFoejNyBil(11223344, "TeslaS", "elbil", 2019, 5);
+        nyElBil(500,85000,347824889,"Tesla","elbil",69,5,199);
         tilFoejNyBil(44332211, "Touareg", "elbil", 2020, 3);
         tilFoejNyBil(12378945, "Ioniq", "elbil", 2019, 5);
         displayCars();
     }
-void beregnAfgift(int kmPrL,int regNr, String maerKe, String model, int arrgang, int antaldoore){
-        Bil bilerafgift = new Bil( regNr,maerKe,model, arrgang,antaldoore) {
-            @Override
-            public double beregnGrønEjerAfgift(int kmPrL) {
-                return super.beregnGrønEjerAfgift(kmPrL);
-            }
-        };
-    bilerafgift.beregnGrønEjerAfgift(kmPrL);
-
-}
 
     @Override
     public String toString() {
@@ -48,6 +31,11 @@ void beregnAfgift(int kmPrL,int regNr, String maerKe, String model, int arrgang,
             System.out.println(bil); //print team
         }
     }
+  static void  nyElBil(int maxKm,int whprkm, int regnr, String make, String model, int arrgang, int antaldoore, int battkap){
+        ElBil nyelbil;
+        nyelbil = new ElBil(regnr,make,model,arrgang,antaldoore,battkap,maxKm,whprkm);
+        biler.add(nyelbil);
+  }
 
     }
 

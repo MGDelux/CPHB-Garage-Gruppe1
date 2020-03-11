@@ -8,6 +8,12 @@ public class DieselBil extends Bil {
         super(regNR, maerke, model, aarGgang, antalDoore);
     }
 
+    @Override
+    public double beregnGrønEjerAfgift(double kmPrL) {
+        return 0;
+    }
+
+
     public DieselBil(int regNR, String maerke, String model, int aarGgang, int antalDoore, double kmPrL, int partikelFilter) {
         super(regNR, maerke, model, aarGgang, antalDoore);
         this.kmPrL = kmPrL;
