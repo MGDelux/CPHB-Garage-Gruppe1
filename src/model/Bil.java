@@ -21,7 +21,7 @@ public abstract class Bil {
       //  }
     }
 
-     abstract public double beregnGrønEjerAfgift(double kmPrL) ;
+     abstract public double beregnGrønEjerAfgift();
 
 
 
@@ -35,6 +35,7 @@ public abstract class Bil {
                 ", antalDoore=" + antalDoore +
                 '}';
     }
+
 }
 
 
