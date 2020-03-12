@@ -6,9 +6,36 @@ public abstract class Bil {
     protected String model;
     protected int aargang;
     protected int antalDoore;
-    protected double beregnGrønEjerAfgidt(double kmPrL){
-        return 0.0;
+    protected int kMPrL;
+
+
+
+    public Bil(int regNr, String maerKe, String model, int arrgang, int antaldoore ) {
+        this.regNR = regNr;
+        this.maerke = maerKe;
+        this.model = model;
+        this.aargang = arrgang;
+        this.antalDoore = antaldoore;
+      //  if (model.toLowerCase().equals("elbil"){
+
+      //  }
     }
+
+     abstract public double beregnGrønEjerAfgift();
+
+
+
+    @Override
+    public String toString() {
+        return "Bil{" +
+                "regNR=" + regNR +
+                ", maerke='" + maerke + '\'' +
+                ", model='" + model + '\'' +
+                ", aargang=" + aargang +
+                ", antalDoore=" + antalDoore +
+                '}';
+    }
+
 }
 
 
